@@ -1,0 +1,146 @@
+table {
+    border-collapse: collapse;
+    width: auto;
+    border: 5px solid #000000;
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+th {
+    border: 1px solid #727171;
+    padding-left: 10px;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #727171;
+}
+
+th {
+    background-color: none;
+    color: rgb(109, 101, 101);
+    text-align: left;
+}
+
+.table-name {
+    color: #000000;
+    border: 0px;
+}
+
+.caption {
+    caption-side: top;
+    text-align: left;
+    color: #000000;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.container-col-3-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-col-3-row-2>* {
+    flex-basis: calc(33.3333% - 10px);
+    margin: 5px;
+}
+
+@media (max-width:1200px) {
+    .container-col-3-row-2>* {
+        flex-basis: 100%;
+    }
+}
+
+.bottom-component {
+    grid-column: 1 / 3;
+}
+
+.border-5 {
+    border: 5px solid #000000;
+    margin: 5px;
+    padding: 15px;
+}
+
+.border-1-blanc {
+    border-top: 1px solid #ebd8d8;
+    border-bottom: 1px solid #ebd8d8;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.padding-right-5 {
+    padding-left: 5px;
+    word-spacing: 10px;
+}
+
+
+.col {
+    display: grid;
+    grid-template-rows: repeat(1, 2fr);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.row>* {
+    flex-basis: calc(50% - 5px);
+    margin: 2.5px;
+}
+
+@media (max-width:1200px) {
+    .row>* {
+        flex-basis: 100%;
+    }
+}
+
+
+p {
+    margin: 0;
+}
+
+.btn {
+    border: none;
+}
+
+.text-col-bl-size-20 {
+    color: #000000;
+    font-size: 20px;
+}
+
+.border-all-1-green {
+    outline: #f1eeee solid 1px;
+    border-radius: 20px;
+}
+
+.item-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+dd {
+    margin: 0;
+}
