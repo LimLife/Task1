@@ -4,10 +4,9 @@ async function Data<T>(api: string, state: REST): Promise<T | null>
 {
     try
     {
-
         const response = await fetch(`http://localhost:5162${api}`,
             {
-                method: "GET",
+                method: state,
                 headers: {
                     "Accept": "application/json",
                 },
